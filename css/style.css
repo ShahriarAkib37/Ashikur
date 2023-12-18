@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --primaryfont: "Poppins", sans-serif;
+    --2ndfont: "PT Sans", sans-serif;
+    --secondaryColor: #353535;
+  }
+  
+/* cmm css */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  ul,ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,h2,h3,h4,h5,h6,ul,p,span,ol {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: var(--primaryfont);
+  }
+  /* cmm css end */
+
+  /* navbar start */
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+  nav {
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+nav .navbar-toggler {
+    border: 0;
+    box-shadow: none !important;
+  }
+  
+  #NavbarSupportedContent ul li a {
+    color: var(--secondaryColor);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 200%;
+    padding: 18px 22px 5px;
+    position: relative;
+  }
+  
+  #NavbarSupportedContent ul li a::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondaryColor);
+    transition: 0.296s;
+  }
+  
+  #NavbarSupportedContent ul li:hover a::after {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+  /* navbar end */
